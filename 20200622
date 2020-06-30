@@ -1,0 +1,6 @@
+import time
+import os
+
+print("A")
+time.sleep(3)
+print("B")

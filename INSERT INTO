@@ -1,0 +1,24 @@
+INSERT INTO
+`news`(`title`, `source`, `create_time`, `description`) 
+VALUES('測試標題','來源','2020-06-30','內容')
+
+INSERT INTO
+`news`(`title`, `source`, `create_time`, `description`) 
+VALUES('kjnkjn','asccee','2020-06-30','strjha')
+
+UPDATE `news` SET `description`=`資料`,`source`=`uuuuuuuuuu`
+WHERE `id` = '5' OR `id` = '4'
+
+UPDATE `news` SET `description`=`資料`,`source`=`uuuuuuuuuu`
+WHERE `id` IN ('5', '4') 
+
+
+DELETE FROM `news` WHERE  `title`='kjnkjn'
+
+SELECT * FROM `news` WHERE `id` IN('4','5')
+
+SELECT * FROM `news` ORDER BY `create_time` ASC
+
+SELECT COUNT(`id`) AS '個數' FROM `news`
+
+SELECT * FROM `news` ORDER BY `create_time` ASC LIMIT 1,3
